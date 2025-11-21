@@ -68,24 +68,26 @@ suppose:
 
 
 (𝛼𝛽)𝜆 = ((a + bi) * (c + di)) * (e + fi)
-      = ((ac - db) + (adi + cbi)) * (e + fi)
-      = ace + acfi - dbe + dbfi + adei - adf + cbei - cbf
-      = (ace - dbe - adf - cbf) + (acf +dbf + ade + cbe)i
+      = ((ac - db) + (ad + cb)i) * (e + fi)
+let X = (ac - db) // real part
+let Y = (ad + cb) // imaginary part
+      = (X + Yi) * (e + fi)
+      = (Xe - Yf) + (Xf + Ye)i
+      = ((ac - db)e - (ad + cb)f) + (((ac - db)f) + (ad + cb)e)i
 
 𝛼(𝛽𝜆) = (a + bi) * ((c + di) * (e + fi))
-      = (a + bi) * ((ce - fd + (cfi + edi))
-      = ace - afd + acfi + aedi + cebi - fdbi - bcf - bed
-      = (ace - afd -bcf - bed) + (acf + aed + ceb + fdb)i
+      = (a + bi) * ((ce - df) + (cf + ed)i)
+let X = (ce - df) // real part
+let Y = (cf + ed) // imaginary part
+      = (a + bi) * (X + Yi)
+      = (Xa - Yb) + (Ya + Xb)i
+      = ((ce - df)a - (cf + ed)b) + ((cf + ed)a + (ce - df)b)i
 
-(αβ)λ = ((a + bi)(c + di))(e + fi)
-= ((ac - bd) + (ad + bc)i)(e + fi)
-= (ac - bd)e + (ac - bd)fi + (ad + bc)ei - (ad + bc)f
-= (ace - bde - adf - bcf) + (acf - bdf + ade + bce)i
-
-α(βλ) = (a + bi)((c + di)(e + fi))
-= (a + bi)((ce - df) + (cf + de)i)
-= a(ce - df) + a(cf + de)i + bi(ce - df) - b(cf + de)
-= (ace - adf - bcf - bde) + (acf + ade + bce - bdf)i
+(𝛼𝛽)𝜆
+= ((ac - db)e - (ad + cb)f) + (((ac - db)f) + (ad + cb)e)i
+= (ace - dbe - adf - cbf) + (acf - dbf + ade + cbe)i
+= ((ce - df)a - (cf + ed)b) + ((cf + ed)a + (ce - df)b)i
+= 𝛼(𝛽𝜆)
 
 therefore (𝛼𝛽)𝜆 = 𝛼(𝛽𝜆)
 
